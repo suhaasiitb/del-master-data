@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #2ec4b6, #ff6b6b);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(240,139,139,1) 0%, rgba(243,252,166,1) 90% );
     color: #333;
     min-height: 100vh;
     display: flex;
