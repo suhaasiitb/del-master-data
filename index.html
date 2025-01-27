@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Data Fetcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Employee Payout Data Viewer</h1>
+      <p>Select the year, month, week, and employee ID to fetch data.</p>
+    </header>
+    <form class="form">
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <select id="year">
+          <option value="">Select Year</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="month">Month:</label>
+        <select id="month">
+          <option value="">Select Month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="week">Week:</label>
+        <select id="week">
+          <option value="">Select Week</option>
+          <option value="1">Week 1</option>
+          <option value="2">Week 2</option>
+          <option value="3">Week 3</option>
+          <option value="4">Week 4</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" placeholder="Enter Employee ID">
+      </div>
+      <button type="button" id="fetchButton" class="btn">Fetch Data</button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="resultContainer" class="result-container" style="display: none;">
+      <h2>Results</h2>
+      <table class="result-table">
+        <thead>
+          <tr>
+            <th>Column Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody id="resultTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
