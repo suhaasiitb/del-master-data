@@ -130,7 +130,6 @@ body {
   .result-table tr:hover {
     background: rgba(46, 196, 182, 0.2);
   }
-  
   /* Animations */
   @keyframes fadeIn {
     from {
